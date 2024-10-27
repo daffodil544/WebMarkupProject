@@ -1,0 +1,177 @@
+article:nth-of-type(2) {
+    
+}
+
+.image-text-container-1 {
+    padding-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    color: #000;
+}
+.diff-background{
+    background: linear-gradient(to bottom,  #7297A463 , #ffffff);
+    padding: 5%;
+}
+.diff-background2{
+    background: linear-gradient(to right,  #7297A463 , #ffffff);
+    padding: 5%;
+}
+.article1{
+    height: 150px;
+    width: 200px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    margin-left: 30%;
+    background-color: #96E0AE;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    padding: 5px;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+.aside-button1{
+    background-color: #6CA87F;
+    height: 50px;
+    width: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30%;
+    z-index: 9999;
+    top: -80px;
+    left: 200px;
+    position: relative;
+}
+.left-img {
+    border-radius: 10px;
+    width: 30vw; 
+    height: auto; 
+    margin-left: 10%;
+}
+.image-middle{
+    border-radius: 10px;
+    width: 80vw; 
+    height: auto; 
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 50px;
+}
+.text-container-p {
+    padding-left: 0%;
+}
+
+article p {
+    border-style: none;
+}
+
+p{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.section2p1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section2p1 p {
+    padding-left: 12%;
+}
+.image-text-container-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: #96CCE0;
+}
+.linear-background{
+    background: linear-gradient(to bottom,  #6CA67F5C , #ffffff);
+}
+.section2p2{
+    padding: 5%;
+    background-color: rgba(150, 206, 224, 0.34);  
+}
+
+.image-right {
+    width: 30vw; /* Maintain aspect ratio */
+    max-width: 350px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-right: 10%;
+    border-radius: 10px;
+}
+.blue-color{
+    background-color: #96CCE0;
+    padding: 5%;
+}
+.green-color{
+    background-color: #6ca87f94;
+    padding: 5%;
+}
+/* Responsive adjustments */
+/* Media Query for Screens Smaller than 768px */
+@media (max-width: 768px) {
+
+    /* Stack images and text vertically */
+    .image-text-container-1,
+    .image-text-container-2 {
+        flex-direction: column; /* Stacks image and text vertically */
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* Ensure images take full width and are centered */
+    .left-img,
+    .image-right,
+    .full-width-img,
+    .homepagepic2 {
+        width: 100%; /* Full width */
+        max-width: 100%;
+        height: auto; /* Maintain aspect ratio */
+        margin: 20px 0; /* Add spacing around images */
+    }
+
+    /* Center paragraphs and reduce padding for better readability */
+    p {
+        padding: 10px 5%;
+        margin: 0 auto;
+        text-align: justify;
+    }
+      /* Ensure buttons are centered and full width */
+      .aside-button1,
+      button {
+          width: 80%; /* Make buttons narrower on small screens */
+          margin: 20px auto; /* Center buttons */
+      }
+      aside {
+          width: 90%;
+          margin: 10px auto;  /* Center-aligns on smaller screens */
+          padding-left: 10px;  /* Pushes elements slightly to the left */
+          align-items: flex-start;
+      }
+  
+      .article1 {
+        width: 100%;  /* Full width */
+        max-width: 200px;  /* Maximum width limit */
+        margin: 10px auto 5px 10px;  /* Aligns slightly to the left */
+        font-size: 1rem; 
+        padding: 10px;
+    }
+
+    .aside-button1 {
+        width: 100%;  
+        max-width: 200px;
+        font-size: 0.9rem;
+        padding: 10px;
+        margin: 20px auto 10px 15px;  /* Move down and slightly left */
+    }
+}
