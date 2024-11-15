@@ -81,7 +81,6 @@ header {
 }
 .main{
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap */
     flex-direction: row; /* Ensure they are in a row */
     align-items: center;
 }
