@@ -1,6 +1,10 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
 body, h1, p {
-    font-family: Arial, sans-serif;
+    font-family: Montserrat, sans-serif;
     line-height: 1.6; 
     word-spacing: 2px; 
 }
@@ -45,8 +49,24 @@ footer {
   .homepagepic2{
     width: 30vw;
     border-radius: 10px;
-    
   }
+  .cookies-message {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 9999; /* Uses z-index for stacking order */
+}
+.cookies-message button{
+    width: 10em;
+    height: 5em;
+    background-color: #E8DCE2;
+    border-radius: 0%;
+}
   
   .footer-contact-btn:hover {
     background-color: #29444e;
@@ -113,7 +133,6 @@ header {
     border-radius: 10px;
     text-align: center;
     background-color:#6B9FB2;
-    height: 100px;
     width: 300px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -123,6 +142,23 @@ header {
     left: 10%;
     position: relative;
 }
+
+@media (max-width: 1200px) {
+    .article1{
+        border-radius: 10px;
+        text-align: center;
+        background-color:#6B9FB2;
+        width: 200px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 30%;
+        z-index: 9999;
+        top: -80px;
+        left: 10%;
+        position: relative;
+    }
+}
+
 label{
     margin-top: 10px;
 }
@@ -150,7 +186,8 @@ textarea{
 }
 nav{
     display: flex;
-    justify-content: end;
+    justify-content: center;
+    padding: 0px 50px;
 }
 nav ul {
     display: flex;
@@ -188,7 +225,8 @@ nav ul li.active {
     padding: 0;                
     position: relative;
 }
-
+/** Commented buttons for now **/
+/*
 button {
     width: 20vw;
     height: 200px;
@@ -204,6 +242,27 @@ button {
     cursor: pointer;
     border-radius: 20px;
 }
+
+
+#button1, #button2, #button3, #button4 {
+    width: 20vw;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #96CCE0;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    border: none; 
+    cursor: pointer;
+    border-radius: 20px;
+    text-decoration: none; /* Remove underline from <a> 
+}
+
+
+
 #buttons{
     display: flex;
     justify-content: space-evenly;
@@ -211,11 +270,15 @@ button {
     gap: 20px;
     padding: 10px;
 }
+*/
+
 a{text-decoration: none;}
 a:hover {
     color: #09324d; /* Change color on hover */
   }
-  
+  aside a:visited {
+    color: purple;
+  }
 button img {
     width: 100px;
     height: 100px;
@@ -247,6 +310,24 @@ p {
 }
 p::first-letter {
     font-size: 1.2em;}
+
+
+p > a:hover {
+    font-weight: bold; 
+    font-size: 20px;
+    transition: transform 0.2s ease, font-weight 0.2s ease; 
+  }
+  
+p > a:active {
+    font-weight: bold; 
+}
+
+.mental-illness {
+    font-size: 18px;
+    font-weight: bold;
+}
+  
+
 
 /* Style for list of sections */
 ul, li {
@@ -326,12 +407,101 @@ li {
         font-size: 1rem; 
         padding: 10px;
     }
-
-    .aside-button1 {
-        width: 100%;  
-        max-width: 200px;
-        font-size: 0.9rem;
-        padding: 10px;
-        margin: 20px auto 10px 15px;  /* Move down and slightly left */
-    }
 }
+
+.warning-hide {
+    display: none;
+}
+
+
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 40px;
+    margin: 0;
+  }
+  
+  #buttons li {
+    flex: 1 1 20%;
+  }
+  
+  .button {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #96CCE0;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  
+  .button:hover {
+    background-color: #395a65;
+  }
+  
+  .button img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+
+
+  .aside-button1 {
+    display: block;
+    width: 100%;  
+    max-width: 200px;
+    font-size: 0.9rem;
+    padding: 10px;
+    margin: 20px auto 10px 15px; 
+    text-align: center;
+    text-decoration: none;
+    background-color: #96CCE0;
+    color: black; 
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 10px; 
+}
+
+.aside-button1:hover {
+    background-color: #016934;
+}
+
+
+/* Center the table inside the section */
+.table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh; 
+    background-color: white; 
+}
+
+.table th, .table td {
+    padding: 15px; 
+    text-align: left; 
+    border: 1px solid black;
+}
+
+.table > table > tr > th {
+    color: black; 
+    text-transform: uppercase; 
+}
+
+.table tr:nth-child(odd) td {
+    background-color: #FFF; 
+}
+
+.table tr:nth-child(even) td {
+    background-color: #CFF; 
+}
+
+  
