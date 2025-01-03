@@ -1,0 +1,5 @@
+Student name: Nergis Guldali
+Student number: 730220
+Student class: IT1A
+GitHub Repository: https://github.com/daffodil544/WebMarkupProject
+GitHub Pages URL: https://daffodil544.github.io/WebMarkupProject/
