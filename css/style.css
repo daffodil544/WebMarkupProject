@@ -13,6 +13,7 @@ body, section {
     padding: 0;
 }
 
+/* Footer styles: background color, text alignment, and spacing */
 footer {
     background-color: #6B9FB2;
     color: white;
@@ -44,12 +45,14 @@ footer {
     border-radius: 10px;
     text-decoration: none;
     margin: 10px 0;
-    text-transform: uppercase; /* Makes the text uppercase */
+    text-transform: uppercase; 
   }
   .homepagepic2{
     width: 30vw;
     border-radius: 10px;
   }
+
+  /* Cookies message position and styling */
   .cookies-message {
     position: fixed;
     bottom: 0;
@@ -59,7 +62,7 @@ footer {
     color: white;
     padding: 10px;
     text-align: center;
-    z-index: 9999; /* Uses z-index for stacking order */
+    z-index: 9999; 
 }
 .cookies-message button{
     width: 10em;
@@ -68,9 +71,12 @@ footer {
     border-radius: 0%;
 }
   
+/* Hover effect for the footer contact button */
   .footer-contact-btn:hover {
     background-color: #29444e;
   }
+
+  /* Footer social icons layout and size */
   .footer-social {
     display: flex;
     gap: 10px;
@@ -85,9 +91,11 @@ header {
     padding: 0%;
     text-align: center;
 }
+
+/* Form container styling */
 #form{
-    width: 90%; /* Change from fixed width to percentage */
-    max-width: 600px; /* Keep the maximum width */
+    width: 90%; 
+    max-width: 600px; 
     height: 600px;
     background-color: #fff;
     margin-top: 50px;
@@ -101,7 +109,7 @@ header {
 }
 .main{
     display: flex;
-    flex-direction: row; /* Ensure they are in a row */
+    flex-direction: row; 
     align-items: center;
 }
 .title-type-1{
@@ -120,6 +128,8 @@ header {
     width: 50%;
     margin-bottom: 20%;
 }
+
+/* Homepic section styling */
 .homepic-section{
     margin-top: 60px;
     margin-bottom: 30px;
@@ -143,6 +153,7 @@ header {
     position: relative;
 }
 
+/* Adjust article styling for smaller screens */
 @media (max-width: 1200px) {
     .article1{
         border-radius: 10px;
@@ -159,6 +170,7 @@ header {
     }
 }
 
+/* Label and input styling */
 label{
     margin-top: 10px;
 }
@@ -184,6 +196,8 @@ textarea{
     width: 45%;
     list-style: none;
 }
+
+/* Navbar styling */
 nav{
     display: flex;
     justify-content: center;
@@ -227,8 +241,9 @@ nav ul li.active {
 }
 
 a{text-decoration: none;}
+/* Changing color on hover */
 a:hover {
-    color: #09324d; /* Change color on hover */
+    color: #09324d; 
   }
   aside a:visited {
     color: purple;
@@ -236,7 +251,7 @@ a:hover {
 button img {
     width: 100px;
     height: 100px;
-    margin-bottom: 10px; /* Space between the icon and the text */
+    margin-bottom: 10px; 
 }
 
 button:hover {
@@ -247,16 +262,16 @@ button:hover {
 h1 {
     text-align: center;
     color: #333;
-    letter-spacing: 1px; /* Adds 2 pixels of space between each letter */
-    text-indent: 20px; /* Indents the first line of the title */
-    word-spacing: 5px; /* Adds 5 pixels of space between each word */
+    letter-spacing: 1px; 
+    text-indent: 20px; 
+    word-spacing: 5px; 
 }
 
 /* Paragraphs with improved readability */
 p {
     margin: 20px;
-    text-indent: 20px; /* Indents the first line of each paragraph by 20 pixels */
-    line-height: 1.8; /* Improves readability */
+    text-indent: 20px; 
+    line-height: 1.8; 
     text-align: justify;
     padding: 10px;
     margin-left: 5%;
@@ -302,27 +317,28 @@ li {
 }
 
 
-/* Responsive adjustments */
+/* Adjustments for smaller screens */
 @media (max-width: 768px) {
     #buttons li {
-        width: 100%; /* On smaller screens, buttons take full width of the row */
+        width: 100%; 
     }
 
     .right-img {
-        float: none; /* Aligns image normally on small screens */
-        margin: 20px 0; /* Adds margin around image */
+        float: none; 
+        margin: 20px 0; 
         width: 100%;
         height: auto;
     }
 
     button {
-        width: 100%; /* Ensures buttons remain full width on small screens */
+        width: 100%; 
     }
 
     button img {
         width: 80px;
         height: 80px;
-    }  /* Make navbar vertical */
+    }  
+    /* Making navbar vertical */
     nav {
         flex-direction: column;
         align-items: center;
@@ -331,33 +347,33 @@ li {
     nav ul {
         flex-direction: column;
         align-items: center;
-        width: 100%;  /* Ensures full width on smaller screens */
+        width: 100%;  
     }
 
     nav ul li {
-        margin: 10px 0;  /* Adds space between items vertically */
-        width: 100%;     /* Makes items full-width */
+        margin: 10px 0;  
+        width: 100%;     
     }
 
     nav ul li a {
         display: block;
         text-align: center;
         padding: 15px;
-        width: 100%;  /* Full width for each link */
+        width: 100%;  
         color: black;
         font-size: 1.1rem;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);  /* Optional: underline style */
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
     }
     
-    /* Adjust logo placement if needed */
+    /* Adjust logo placement */
     nav  img {
        padding: 0%;
     }
     
     .article1 {
-        width: 100%;  /* Full width */
-        max-width: 200px;  /* Maximum width limit */
-        margin: 10px auto 5px 10px;  /* Aligns slightly to the left */
+        width: 100%;  
+        max-width: 200px;  
+        margin: 10px auto 5px 10px;  
         font-size: 1rem; 
         padding: 10px;
     }
@@ -432,6 +448,7 @@ li {
 
 /* Center the table inside the section */
 .table {
+    padding: 60px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -458,4 +475,7 @@ li {
     background-color: #CFF; 
 }
 
-  
+.education-bg {
+    background: linear-gradient(to bottom,  #6B9FB2 , #ffffff);
+    padding: 5%;
+}

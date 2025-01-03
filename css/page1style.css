@@ -92,6 +92,14 @@ p{
     align-items: center;
     background-color: #96CCE0;
 }
+
+.image-text-container-rbg {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
 .linear-background{
     background: linear-gradient(to bottom,  #6CA67F5C , #ffffff);
 }
@@ -101,7 +109,7 @@ p{
 }
 
 .image-right {
-    width: 30vw; /* Maintain aspect ratio */
+    width: 30vw; 
     max-width: 350px;
     margin-top: 50px;
     margin-bottom: 20px;
@@ -123,7 +131,7 @@ p{
     /* Stack images and text vertically */
     .image-text-container-1,
     .image-text-container-2 {
-        flex-direction: column; /* Stacks image and text vertically */
+        flex-direction: column; 
         text-align: center;
         padding: 20px;
     }
@@ -133,10 +141,10 @@ p{
     .image-right,
     .full-width-img,
     .homepagepic2 {
-        width: 100%; /* Full width */
+        width: 100%; 
         max-width: 100%;
-        height: auto; /* Maintain aspect ratio */
-        margin: 20px 0; /* Add spacing around images */
+        height: auto; 
+        margin: 20px 0; 
     }
 
     /* Center paragraphs and reduce padding for better readability */
@@ -145,23 +153,23 @@ p{
         margin: 0 auto;
         text-align: justify;
     }
-      /* Ensure buttons are centered and full width */
+      /* Ensure buttons are centered */
       .aside-button1,
       button {
-          width: 80%; /* Make buttons narrower on small screens */
-          margin: 20px auto; /* Center buttons */
+          width: 80%; 
+          margin: 20px auto; 
       }
       aside {
           width: 90%;
-          margin: 10px auto;  /* Center-aligns on smaller screens */
-          padding-left: 10px;  /* Pushes elements slightly to the left */
+          margin: 10px auto;  
+          padding-left: 10px;  
           align-items: flex-start;
       }
   
       .article1 {
-        width: 100%;  /* Full width */
-        max-width: 200px;  /* Maximum width limit */
-        margin: 10px auto 5px 10px;  /* Aligns slightly to the left */
+        width: 100%;  
+        max-width: 200px;  
+        margin: 10px auto 5px 10px;  
         font-size: 1rem; 
         padding: 10px;
     }
@@ -171,6 +179,6 @@ p{
         max-width: 200px;
         font-size: 0.9rem;
         padding: 10px;
-        margin: 20px auto 10px 15px;  /* Move down and slightly left */
+        margin: 20px auto 10px 15px;  
     }
 }
