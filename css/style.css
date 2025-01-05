@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-
 body, h1, p {
     font-family: Montserrat, sans-serif;
     line-height: 1.6; 
@@ -258,7 +257,7 @@ button:hover {
     color: white;
 }
 
-h1 {
+h1,h2 {
     text-align: center;
     color: #333;
     letter-spacing: 1px; 
@@ -470,6 +469,6 @@ li {
 }
 
 .education-bg {
-    background: linear-gradient(to bottom,  #6B9FB2 , #ffffff);
+    background: linear-gradient(to bottom,  #6b9fb2ac , #ffffff);
     padding: 5%;
 }
