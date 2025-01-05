@@ -127,7 +127,8 @@ p{
 
     /* Stack images and text vertically */
     .image-text-container-1,
-    .image-text-container-2 {
+    .image-text-container-2,
+    .image-text-container-rbg {
         flex-direction: column; 
         text-align: center;
         padding: 20px;
