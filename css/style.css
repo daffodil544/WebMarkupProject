@@ -1,7 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-
 body, h1, p {
     font-family: Montserrat, sans-serif;
     line-height: 1.6; 
@@ -63,12 +60,16 @@ footer {
     text-align: center;
     z-index: 9999; 
 }
+.hidden-title{
+    display: none;
+}
 .cookies-message button{
     width: 10em;
     height: 5em;
     background-color: #E8DCE2;
     border-radius: 0%;
 }
+
   
 /* Hover effect for the footer contact button */
   .footer-contact-btn:hover {
